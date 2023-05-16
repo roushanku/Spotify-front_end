@@ -18,31 +18,28 @@
         </ul>
     </nav>
     <div class="container">
-
         <div class="songlist">
-            <h1>Relaxed Music - Enjoy</h1>
-            <div>
-                <div class="songitem">
-                    <img src="cover/1.jpeg" alt="1">
-                    <span class="songname">aashiqui aa gyi</span>
-                    <span class="songlistplay"><span class="timestamp">04:30 <i
-                                class="fas songitemplay fa-play-circle"></i></span></span>
-                </div>
-                <div class="songitem">
-                    <img src="cover/1.jpeg" alt="1">
-                    <span class="songname">aashiqui aa gyi</span>
-                    <span class="songlistplay"><span class="timestamp">04:30 <i
-                                class="fas songitemplay fa-play-circle"></i></span></span>
-                </div>
-                <div class="songitem">
-                    <img src="cover/1.jpeg" alt="1">
-                    <span class="songname">aashiqui aa gyi</span>
-                    <span class="songlistplay"><span class="timestamp">04:30 <i
-                                class="fas songitemplay fa-play-circle"></i></span></span>
-                </div>
+            <!-- <h1>Relaxed Music - Enjoy</h1> -->
+            <div class="songitem">
+                <img src="cover/1.jpeg" alt="1">
+                <span class="songname">aashiqui aa gyi</span>
+                <span class="songlistplay"><span class="timestamp">04:30 &nbsp;&nbsp;<button onclick="update_song(0)"><i
+                                class="fas songitemplay fa-play-circle"></i></button></span>
+            </div>
+            <div class="songitem">
+                <img src="cover/2.jpg" alt="1">
+                <span class="songname">hamsafar song</span>
+                <span class="songlistplay"><span class="timestamp">04:30 &nbsp;&nbsp;<button onclick="update_song(1)"><i
+                                class="fas songitemplay fa-play-circle"></i></button></span>
+            </div>
+            <div class="songitem">
+                <img src="cover/3.png" alt="1">
+                <span class="songname">pia piya song</span>
+                <span class="songlistplay"><span class="timestamp">04:30 &nbsp;&nbsp;<button onclick="update_song(2)"><i
+                                class="fas songitemplay fa-play-circle"></i></button></span>
             </div>
         </div>
-        <div class="songBanner"></div>
+        <!-- <div class="songBanner"></div> -->
     </div>
 
     <div class="bottom">
@@ -53,7 +50,13 @@
             <i class="fas fa-3x fa-fast-forward"></i>
         </div>
         <div class="songinfo">
-            <img src="g.gif" width=24px alt="1" id="gif"> aashiqui aa gyi
+            <img src="g.gif" width="100px" alt="1" id="gif"><span id="songtext" class="songtext">Current song: aashiqui
+                aa gyi</span>
+        </div>
+
+        <div class="timeline">
+            <span id="currenttime">0:00 /</span>
+            <span id="duration">0:00</span>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/9a459ce497.js" crossorigin="anonymous"></script>
